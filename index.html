@@ -1,0 +1,121 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a CV Page with HTML and CSS</title>
+    <style>
+        .titres-container {
+            display: flex;
+            justify-content: space-between; 
+            width: 100%;
+            align-items: center; 
+        }
+        h1, h5, h5 {
+            margin: 0; 
+        }
+        .photo {
+        width: 120px; 
+        height: 140px;
+        border-radius: 50%;
+        margin-left: 20px 
+      }
+       .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0; 
+  padding: 15px;             
+  border-radius: 10px;       
+  margin-bottom: 20px; 
+}
+       .nav-menu {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+       .nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+      .nav-menu a:hover {
+  background-color: #45a049;
+  color: white;
+}
+      .main-section {
+  margin: 30px auto;
+  padding: 20px;
+}
+grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+        }
+
+      .grid-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+      .grid-container {
+                grid-template-columns: 1fr;
+              }
+            }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <div class="titres-container">
+  
+  
+<h1>Douaa Barkouch</h1>
+<h5>Email:barkouchdouaa06@gmail.com</h5>
+<h5>Phone:0669102823</h5>
+<img class="photo" src="C:\xam\htdocs\exercice1\moi.jpeg" alt="Photo de Douaa">
+</div>
+</div>
+<nav class="nav-menu">
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+</nav>
+<main class="main-section">
+  <div class="grid-container">
+    <section id="education" class="grid-item">
+      <h2>Education</h2>
+      <ul>
+        <li>DUT in Computer Science - EST Safi</li>
+        <li>Baccalaureate in Physical Sciences</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="grid-item">
+      <h2>Experience</h2>
+      <ul>
+        <li>Programming & Web Development</li>
+        <li>Design and Development of a Web Application Using Merise Methodology, SQL Implementation, and PHP Based Database Integration</li>
+        <li>Theatre Studies (4 years)</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: PHP, C, Python</li>
+        <li>Web Development: HTML, CSS, PHP, JavaScript</li>
+        <li>Database Management: MySQL, SQL, Database Design with Merise</li>
+      </ul>
+    </section>
+    
+  </main>
+</body>
+</html>
